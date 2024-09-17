@@ -1,0 +1,19 @@
+version: "1"
+services:
+  frontend:
+    image: rentalsphere/rentalsphere-frontend
+    ports:
+      - 5173:5173
+    depends_on:
+      - backend
+    networks:
+      - docker_network
+  backend:
+    image: rentalsphere/rentalsphere-backend
+    ports:
+      - 8080:8080
+    networks:
+      - docker_network
+networks:
+  docker_network:
+    driver: bridge

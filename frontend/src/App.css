@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+  }
+  
+  .active{
+    background-color: #15803D;
+    color: white;
+  }
+  
+  .active:hover{
+    background-color: #15803D !important;
+    color: white !important;
+  }

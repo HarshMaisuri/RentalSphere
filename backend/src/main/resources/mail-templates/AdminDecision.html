@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Decision</title>
+</head>
+<body>
+    <!--  greeting message to user  -->
+    <p>Greetings <span th:text="${name}"></span>,</p>
+    <!--  message from admin  -->
+    <p>You got a new message from <strong>Admin</strong>:</p>
+    <p style="padding: 12px; border-left: 4px solid #d0d0d0; font-style: italic;"><strong th:text="${message}"></strong></p>
+    <p>Best wishes,<br>Admin | RentalSphere</p>
+    <!--  rentalsphere logo  -->
+    <img src="images/logo.png" th:src="|cid:${logo}|" alt="rentalsphere" width="120px" />
+</body>
+</html>
